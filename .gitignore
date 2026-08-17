@@ -1,0 +1,18 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.tools/
+llama-cpp-repo/
+# Virtual environments
+.venv
+# 大二进制文件（防止误提交：安装包、模型文件等）
+*.exe
+*.dll
+*.gguf
+*.bin
+*.safetensors
+*.pth

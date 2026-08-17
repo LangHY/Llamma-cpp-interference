@@ -28,7 +28,7 @@ def bench_model(n_gpu, prompt, model_dir):
 
     print(f"Speed = {speed:.3f}, Time = {duration:.3f}")
 
-def GetBest(model_dir, llama_bin_path, trails = 30):
+def GetBest(model_dir, llama_bin_path, trails = 70):
     cmd = [
         "llama-optimus",
         "--llama-bin", llama_bin_path,

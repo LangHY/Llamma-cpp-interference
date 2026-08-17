@@ -1,0 +1,192 @@
+PS E:\local_AI\interference> uv run main.py
+Traceback (most recent call last):
+  File "E:\local_AI\interference\main.py", line 82, in <module>
+    main()
+  File "E:\local_AI\interference\main.py", line 58, in main
+    out = GetBest(model_dir, llama_bin_path)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\local_AI\interference\main.py", line 49, in GetBest
+    raise RuntimeError(f"运行失败: {result.stderr}")
+RuntimeError: 运行失败: E:\local_AI\interference\.venv\Lib\site-packages\llama_optimus\core.py:392: ExperimentalWarning: Argument ``multivariate`` is an experimental feature. The interface can change in the future.
+  sampler = TPESampler(multivariate=True)  # Others: "random": RandomSampler(); "cmaes": CmaEsSampler(),
+[I 2026-08-17 19:07:36,927] A new study created in memory with name: no-name-4d9f5305-c770-45f9-9353-2fa5b254437a
+[I 2026-08-17 19:08:11,351] Trial 0 finished with value: 11.789653 and parameters: {'batch': 9, 'u_batch': 7913, 'threads': 21, 'gpu_layers': 68}. Best is trial 0 with value: 11.789653.
+[I 2026-08-17 19:09:03,658] Trial 1 finished with value: 7.784435 and parameters: {'batch': 14664, 'u_batch': 5558, 'threads': 9, 'gpu_layers': 7}. Best is trial 0 with value: 11.789653.
+[I 2026-08-17 19:10:05,604] Trial 2 finished with value: 6.395569 and parameters: {'batch': 14828, 'u_batch': 1373, 'threads': 17, 'gpu_layers': 70}. Best is trial 0 with value: 11.789653.
+[I 2026-08-17 19:11:07,616] Trial 3 finished with value: 6.378042 and parameters: {'batch': 8565, 'u_batch': 2559, 'threads': 20, 'gpu_layers': 86}. Best is trial 0 with value: 11.789653.
+[I 2026-08-17 19:12:09,680] Trial 4 finished with value: 6.377966 and parameters: {'batch': 2227, 'u_batch': 208, 'threads': 13, 'gpu_layers': 103}. Best is trial 0 with value: 11.789653.
+[I 2026-08-17 19:13:11,657] Trial 5 finished with value: 6.384312 and parameters: {'batch': 14591, 'u_batch': 1984, 'threads': 9, 'gpu_layers': 148}. Best is trial 0 with value: 11.789653.
+[I 2026-08-17 19:14:13,644] Trial 6 finished with value: 6.380342 and parameters: {'batch': 14146, 'u_batch': 2031, 'threads': 1, 'gpu_layers': 117}. Best is trial 0 with value: 11.789653.
+[I 2026-08-17 19:15:15,668] Trial 7 finished with value: 6.385189 and parameters: {'batch': 8394, 'u_batch': 1365, 'threads': 12, 'gpu_layers': 74}. Best is trial 0 with value: 11.789653.
+[I 2026-08-17 19:16:17,602] Trial 8 finished with value: 6.393586 and parameters: {'batch': 8212, 'u_batch': 5733, 'threads': 6, 'gpu_layers': 142}. Best is trial 0 with value: 11.789653.
+[I 2026-08-17 19:17:19,658] Trial 9 finished with value: 6.378727 and parameters: {'batch': 2196, 'u_batch': 8117, 'threads': 19, 'gpu_layers': 115}. Best is trial 0 with value: 11.789653.
+[I 2026-08-17 19:17:38,319] Trial 10 finished with value: 22.634584 and parameters: {'batch': 425, 'u_batch': 8076, 'threads': 21, 'gpu_layers': 32}. Best is trial 10 with value: 22.634584.
+[I 2026-08-17 19:17:59,694] Trial 11 finished with value: 19.59254 and parameters: {'batch': 299, 'u_batch': 6747, 'threads': 19, 'gpu_layers': 30}. Best is trial 10 with value: 22.634584.
+[I 2026-08-17 19:18:40,443] Trial 12 finished with value: 9.935774 and parameters: {'batch': 494, 'u_batch': 5323, 'threads': 16, 'gpu_layers': 18}. Best is trial 10 with value: 22.634584.
+[I 2026-08-17 19:19:42,372] Trial 13 finished with value: 6.390945 and parameters: {'batch': 7456, 'u_batch': 5960, 'threads': 16, 'gpu_layers': 50}. Best is trial 10 with value: 22.634584.
+[I 2026-08-17 19:20:25,132] Trial 14 finished with value: 9.434275 and parameters: {'batch': 1116, 'u_batch': 6750, 'threads': 24, 'gpu_layers': 18}. Best is trial 10 with value: 22.634584.
+[I 2026-08-17 19:21:00,434] Trial 15 finished with value: 11.510052 and parameters: {'batch': 2801, 'u_batch': 8039, 'threads': 16, 'gpu_layers': 22}. Best is trial 10 with value: 22.634584.
+[I 2026-08-17 19:21:18,770] Trial 16 finished with value: 23.040481 and parameters: {'batch': 5454, 'u_batch': 7185, 'threads': 3, 'gpu_layers': 32}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:22:28,899] Trial 17 finished with value: 5.687016 and parameters: {'batch': 3119, 'u_batch': 7731, 'threads': 2, 'gpu_layers': 2}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:23:31,075] Trial 18 finished with value: 6.368116 and parameters: {'batch': 4828, 'u_batch': 4685, 'threads': 3, 'gpu_layers': 48}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:24:33,123] Trial 19 finished with value: 6.372746 and parameters: {'batch': 10811, 'u_batch': 7485, 'threads': 3, 'gpu_layers': 85}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:25:35,053] Trial 20 finished with value: 6.389178 and parameters: {'batch': 4320, 'u_batch': 7256, 'threads': 1, 'gpu_layers': 74}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:26:04,599] Trial 21 finished with value: 13.880087 and parameters: {'batch': 6013, 'u_batch': 6915, 'threads': 9, 'gpu_layers': 24}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:26:52,625] Trial 22 finished with value: 8.387085 and parameters: {'batch': 5433, 'u_batch': 896, 'threads': 19, 'gpu_layers': 11}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:27:54,675] Trial 23 finished with value: 6.37687 and parameters: {'batch': 7810, 'u_batch': 6802, 'threads': 23, 'gpu_layers': 37}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:28:56,772] Trial 24 finished with value: 6.371397 and parameters: {'batch': 351, 'u_batch': 3867, 'threads': 16, 'gpu_layers': 74}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:29:34,941] Trial 25 finished with value: 10.632466 and parameters: {'batch': 11711, 'u_batch': 8176, 'threads': 6, 'gpu_layers': 18}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:30:37,737] Trial 26 finished with value: 6.304579 and parameters: {'batch': 46, 'u_batch': 5231, 'threads': 21, 'gpu_layers': 58}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:31:39,714] Trial 27 finished with value: 6.381651 and parameters: {'batch': 8030, 'u_batch': 7180, 'threads': 1, 'gpu_layers': 44}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:32:41,889] Trial 28 finished with value: 6.366971 and parameters: {'batch': 2047, 'u_batch': 7050, 'threads': 14, 'gpu_layers': 54}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:33:10,464] Trial 29 finished with value: 14.327703 and parameters: {'batch': 1116, 'u_batch': 6426, 'threads': 20, 'gpu_layers': 25}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:34:12,477] Trial 30 finished with value: 6.384243 and parameters: {'batch': 10212, 'u_batch': 4251, 'threads': 5, 'gpu_layers': 39}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:35:14,746] Trial 31 finished with value: 6.349022 and parameters: {'batch': 483, 'u_batch': 6733, 'threads': 20, 'gpu_layers': 45}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:35:44,940] Trial 32 finished with value: 13.541478 and parameters: {'batch': 539, 'u_batch': 6701, 'threads': 20, 'gpu_layers': 24}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:36:46,956] Trial 33 finished with value: 6.383422 and parameters: {'batch': 4143, 'u_batch': 7398, 'threads': 22, 'gpu_layers': 63}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:37:06,728] Trial 34 finished with value: 21.22701 and parameters: {'batch': 15673, 'u_batch': 5271, 'threads': 18, 'gpu_layers': 31}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:37:35,000] Trial 35 finished with value: 14.488145 and parameters: {'batch': 13686, 'u_batch': 4116, 'threads': 17, 'gpu_layers': 25}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:38:37,241] Trial 36 finished with value: 6.359135 and parameters: {'batch': 15907, 'u_batch': 4529, 'threads': 21, 'gpu_layers': 38}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:39:05,867] Trial 37 finished with value: 14.315784 and parameters: {'batch': 16078, 'u_batch': 6131, 'threads': 20, 'gpu_layers': 25}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:40:07,879] Trial 38 finished with value: 6.384906 and parameters: {'batch': 15221, 'u_batch': 5472, 'threads': 12, 'gpu_layers': 56}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:41:09,801] Trial 39 finished with value: 6.386391 and parameters: {'batch': 11375, 'u_batch': 4390, 'threads': 18, 'gpu_layers': 119}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:42:11,704] Trial 40 finished with value: 6.420137 and parameters: {'batch': 16357, 'u_batch': 1011, 'threads': 6, 'gpu_layers': 0}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:42:55,888] Trial 41 finished with value: 9.160143 and parameters: {'batch': 9085, 'u_batch': 4104, 'threads': 13, 'gpu_layers': 13}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:43:23,754] Trial 42 finished with value: 14.710668 and parameters: {'batch': 14092, 'u_batch': 3181, 'threads': 13, 'gpu_layers': 25}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:44:25,976] Trial 43 finished with value: 6.36483 and parameters: {'batch': 14062, 'u_batch': 2676, 'threads': 14, 'gpu_layers': 51}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:44:49,989] Trial 44 finished with value: 17.167154 and parameters: {'batch': 15162, 'u_batch': 3542, 'threads': 10, 'gpu_layers': 28}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:45:36,131] Trial 45 finished with value: 8.631461 and parameters: {'batch': 14362, 'u_batch': 2706, 'threads': 6, 'gpu_layers': 34}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:46:08,031] Trial 46 finished with value: 12.794855 and parameters: {'batch': 4498, 'u_batch': 917, 'threads': 3, 'gpu_layers': 23}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:46:56,941] Trial 47 finished with value: 8.253895 and parameters: {'batch': 16252, 'u_batch': 3977, 'threads': 11, 'gpu_layers': 9}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:47:56,619] Trial 48 finished with value: 6.73201 and parameters: {'batch': 1847, 'u_batch': 8163, 'threads': 21, 'gpu_layers': 2}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:48:47,460] Trial 49 finished with value: 7.83458 and parameters: {'batch': 4851, 'u_batch': 7511, 'threads': 4, 'gpu_layers': 36}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:49:40,662] Trial 50 finished with value: 7.533517 and parameters: {'batch': 15614, 'u_batch': 5791, 'threads': 3, 'gpu_layers': 11}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:50:25,079] Trial 51 finished with value: 9.077294 and parameters: {'batch': 13933, 'u_batch': 2390, 'threads': 15, 'gpu_layers': 13}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:51:20,290] Trial 52 finished with value: 7.204466 and parameters: {'batch': 12711, 'u_batch': 4515, 'threads': 11, 'gpu_layers': 47}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:52:15,620] Trial 53 finished with value: 7.174879 and parameters: {'batch': 11774, 'u_batch': 7672, 'threads': 23, 'gpu_layers': 78}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:53:06,003] Trial 54 finished with value: 7.974771 and parameters: {'batch': 4889, 'u_batch': 5755, 'threads': 2, 'gpu_layers': 10}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:53:25,784] Trial 55 finished with value: 21.230285 and parameters: {'batch': 1018, 'u_batch': 7818, 'threads': 18, 'gpu_layers': 31}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:54:21,017] Trial 56 finished with value: 7.186224 and parameters: {'batch': 3027, 'u_batch': 7906, 'threads': 21, 'gpu_layers': 44}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:54:50,588] Trial 57 finished with value: 13.85228 and parameters: {'batch': 231, 'u_batch': 7707, 'threads': 13, 'gpu_layers': 24}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:55:46,090] Trial 58 finished with value: 7.165438 and parameters: {'batch': 2881, 'u_batch': 7664, 'threads': 19, 'gpu_layers': 45}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:56:45,466] Trial 59 finished with value: 6.758054 and parameters: {'batch': 13705, 'u_batch': 7098, 'threads': 17, 'gpu_layers': 2}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:57:31,966] Trial 60 finished with value: 8.578768 and parameters: {'batch': 597, 'u_batch': 7771, 'threads': 24, 'gpu_layers': 35}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:58:25,037] Trial 61 finished with value: 7.497049 and parameters: {'batch': 92, 'u_batch': 7382, 'threads': 18, 'gpu_layers': 42}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:59:16,677] Trial 62 finished with value: 7.702106 and parameters: {'batch': 15622, 'u_batch': 3244, 'threads': 15, 'gpu_layers': 42}. Best is trial 16 with value: 23.040481.
+[I 2026-08-17 19:59:34,832] Trial 63 finished with value: 23.203791 and parameters: {'batch': 15524, 'u_batch': 2850, 'threads': 11, 'gpu_layers': 32}. Best is trial 63 with value: 23.203791.
+[I 2026-08-17 20:00:26,321] Trial 64 finished with value: 7.731031 and parameters: {'batch': 13357, 'u_batch': 855, 'threads': 12, 'gpu_layers': 43}. Best is trial 63 with value: 23.203791.
+[I 2026-08-17 20:01:17,755] Trial 65 finished with value: 7.73037 and parameters: {'batch': 15563, 'u_batch': 6572, 'threads': 19, 'gpu_layers': 74}. Best is trial 63 with value: 23.203791.
+[I 2026-08-17 20:02:05,918] Trial 66 finished with value: 8.349867 and parameters: {'batch': 4622, 'u_batch': 6327, 'threads': 15, 'gpu_layers': 10}. Best is trial 63 with value: 23.203791.
+[I 2026-08-17 20:02:57,500] Trial 67 finished with value: 7.721534 and parameters: {'batch': 14868, 'u_batch': 633, 'threads': 24, 'gpu_layers': 80}. Best is trial 63 with value: 23.203791.
+[I 2026-08-17 20:03:45,714] Trial 68 finished with value: 8.37048 and parameters: {'batch': 1132, 'u_batch': 7254, 'threads': 16, 'gpu_layers': 10}. Best is trial 63 with value: 23.203791.
+[I 2026-08-17 20:04:06,198] Trial 69 finished with value: 20.357854 and parameters: {'batch': 16346, 'u_batch': 2823, 'threads': 6, 'gpu_layers': 30}. Best is trial 63 with value: 23.203791.
+[I 2026-08-17 20:04:06,200] A new study created in memory with name: no-name-16c2f49a-29d3-495f-ba4c-cf0a49f694ba
+[I 2026-08-17 20:04:24,543] Trial 0 finished with value: 23.126602 and parameters: {'flash_attn': 0, 'override_tensor': 'ffn_cpu_all'}. Best is trial 0 with value: 23.126602.
+[I 2026-08-17 20:04:42,773] Trial 1 finished with value: 23.096546 and parameters: {'flash_attn': 0, 'override_tensor': 'ffn_cpu_down'}. Best is trial 0 with value: 23.126602.
+[I 2026-08-17 20:05:01,000] Trial 2 finished with value: 23.19042 and parameters: {'flash_attn': 0, 'override_tensor': 'ffn_cpu_from_6'}. Best is trial 2 with value: 23.19042.
+[I 2026-08-17 20:05:18,926] Trial 3 finished with value: 23.520494 and parameters: {'flash_attn': 1, 'override_tensor': 'ffn_cpu_all'}. Best is trial 3 with value: 23.520494.
+[I 2026-08-17 20:05:36,897] Trial 4 finished with value: 23.522222 and parameters: {'flash_attn': 1, 'override_tensor': 'ffn_cpu_up'}. Best is trial 4 with value: 23.522222.
+[I 2026-08-17 20:05:55,042] Trial 5 finished with value: 23.216598 and parameters: {'flash_attn': 0, 'override_tensor': 'ffn_cpu_updown'}. Best is trial 4 with value: 23.522222.
+[I 2026-08-17 20:06:13,301] Trial 6 finished with value: 23.139118 and parameters: {'flash_attn': 0, 'override_tensor': 'ffn_cpu_even'}. Best is trial 4 with value: 23.522222.
+[I 2026-08-17 20:06:31,326] Trial 7 finished with value: 23.586076 and parameters: {'flash_attn': 1, 'override_tensor': 'ffn_cpu_last_quarter'}. Best is trial 7 with value: 23.586076.
+[I 2026-08-17 20:06:49,268] Trial 8 finished with value: 23.570118 and parameters: {'flash_attn': 1, 'override_tensor': 'ffn_cpu_from_6'}. Best is trial 7 with value: 23.586076.
+[I 2026-08-17 20:07:07,173] Trial 9 finished with value: 23.563986 and parameters: {'flash_attn': 1, 'override_tensor': 'none'}. Best is trial 7 with value: 23.586076.
+[I 2026-08-17 20:07:25,415] Trial 10 finished with value: 23.121531 and parameters: {'flash_attn': 0, 'override_tensor': 'ffn_cpu_last_quarter'}. Best is trial 7 with value: 23.586076.
+[I 2026-08-17 20:07:43,498] Trial 11 finished with value: 23.381031 and parameters: {'flash_attn': 1, 'override_tensor': 'ffn_cpu_updown'}. Best is trial 7 with value: 23.586076.
+[I 2026-08-17 20:08:01,523] Trial 12 finished with value: 23.542499 and parameters: {'flash_attn': 1, 'override_tensor': 'ffn_cpu_even'}. Best is trial 7 with value: 23.586076.
+[I 2026-08-17 20:08:19,739] Trial 13 finished with value: 23.242933 and parameters: {'flash_attn': 0, 'override_tensor': 'ffn_cpu_odd'}. Best is trial 7 with value: 23.586076.
+[I 2026-08-17 20:08:37,977] Trial 14 finished with value: 23.127358 and parameters: {'flash_attn': 0, 'override_tensor': 'none'}. Best is trial 7 with value: 23.586076.
+[I 2026-08-17 20:08:56,364] Trial 15 finished with value: 23.115209 and parameters: {'flash_attn': 0, 'override_tensor': 'ffn_cpu_up'}. Best is trial 7 with value: 23.586076.
+[I 2026-08-17 20:09:14,388] Trial 16 finished with value: 23.538945 and parameters: {'flash_attn': 1, 'override_tensor': 'ffn_cpu_down'}. Best is trial 7 with value: 23.586076.
+[I 2026-08-17 20:09:32,269] Trial 17 finished with value: 23.658727 and parameters: {'flash_attn': 1, 'override_tensor': 'ffn_cpu_odd'}. Best is trial 17 with value: 23.658727.
+E:\local_AI\interference\.venv\Lib\site-packages\llama_optimus\core.py:451: ExperimentalWarning: Argument ``multivariate`` is an experimental feature. The interface can change in the future.
+  sampler_3 = TPESampler(multivariate=True)  # Others: "random": RandomSampler(); "cmaes": CmaEsSampler(),
+[I 2026-08-17 20:09:32,270] A new study created in memory with name: no-name-01cfefae-3ffc-4c30-b24c-aec9293ed444
+[I 2026-08-17 20:10:20,881] Trial 0 finished with value: 8.213964 and parameters: {'batch': 4146, 'u_batch': 5960, 'threads': 18, 'gpu_layers': 36, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_up'}. Best is trial 0 with value: 8.213964.
+[I 2026-08-17 20:11:04,011] Trial 1 finished with value: 9.30041 and parameters: {'batch': 3797, 'u_batch': 1812, 'threads': 10, 'gpu_layers': 74, 'flash_attn': 1, 'override_tensor': 'ffn_cpu_updown'}. Best is trial 1 with value: 9.30041.
+[I 2026-08-17 20:11:55,513] Trial 2 finished with value: 7.726971 and parameters: {'batch': 11252, 'u_batch': 4965, 'threads': 15, 'gpu_layers': 99, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_from_6'}. Best is trial 1 with value: 9.30041.
+[I 2026-08-17 20:12:38,337] Trial 3 finished with value: 9.367811 and parameters: {'batch': 1123, 'u_batch': 7136, 'threads': 14, 'gpu_layers': 86, 'flash_attn': 1, 'override_tensor': 'ffn_cpu_last_quarter'}. Best is trial 3 with value: 9.367811.
+[I 2026-08-17 20:13:21,650] Trial 4 finished with value: 9.332733 and parameters: {'batch': 6169, 'u_batch': 4606, 'threads': 24, 'gpu_layers': 17, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_all'}. Best is trial 3 with value: 9.367811.
+[I 2026-08-17 20:13:37,416] Trial 5 finished with value: 27.141891 and parameters: {'batch': 1516, 'u_batch': 6826, 'threads': 23, 'gpu_layers': 34, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_odd'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:14:29,196] Trial 6 finished with value: 7.690463 and parameters: {'batch': 5444, 'u_batch': 3582, 'threads': 2, 'gpu_layers': 54, 'flash_attn': 0, 'override_tensor': 'none'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:15:20,658] Trial 7 finished with value: 7.722954 and parameters: {'batch': 11058, 'u_batch': 2491, 'threads': 6, 'gpu_layers': 75, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_up'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:16:03,400] Trial 8 finished with value: 9.385837 and parameters: {'batch': 16023, 'u_batch': 5660, 'threads': 24, 'gpu_layers': 79, 'flash_attn': 1, 'override_tensor': 'ffn_cpu_up'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:16:39,485] Trial 9 finished with value: 11.135756 and parameters: {'batch': 6893, 'u_batch': 7189, 'threads': 22, 'gpu_layers': 35, 'flash_attn': 1, 'override_tensor': 'ffn_cpu_up'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:17:17,525] Trial 10 finished with value: 10.672977 and parameters: {'batch': 1643, 'u_batch': 5294, 'threads': 18, 'gpu_layers': 18, 'flash_attn': 1, 'override_tensor': 'ffn_cpu_odd'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:17:59,668] Trial 11 finished with value: 9.519223 and parameters: {'batch': 6452, 'u_batch': 5359, 'threads': 23, 'gpu_layers': 56, 'flash_attn': 1, 'override_tensor': 'ffn_cpu_up'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:18:25,027] Trial 12 finished with value: 16.310719 and parameters: {'batch': 4319, 'u_batch': 7876, 'threads': 21, 'gpu_layers': 27, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_odd'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:19:20,512] Trial 13 finished with value: 7.236015 and parameters: {'batch': 7660, 'u_batch': 7618, 'threads': 24, 'gpu_layers': 6, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_odd'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:20:10,302] Trial 14 finished with value: 7.998499 and parameters: {'batch': 1572, 'u_batch': 8127, 'threads': 23, 'gpu_layers': 68, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_last_quarter'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:20:45,763] Trial 15 finished with value: 11.463241 and parameters: {'batch': 71, 'u_batch': 6373, 'threads': 20, 'gpu_layers': 22, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_down'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:21:35,417] Trial 16 finished with value: 8.03256 and parameters: {'batch': 1655, 'u_batch': 5875, 'threads': 9, 'gpu_layers': 51, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_odd'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:22:25,026] Trial 17 finished with value: 8.031311 and parameters: {'batch': 8735, 'u_batch': 5240, 'threads': 21, 'gpu_layers': 76, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_odd'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:23:14,565] Trial 18 finished with value: 8.039492 and parameters: {'batch': 4252, 'u_batch': 5686, 'threads': 11, 'gpu_layers': 120, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_even'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:24:04,361] Trial 19 finished with value: 8.004683 and parameters: {'batch': 12494, 'u_batch': 7777, 'threads': 22, 'gpu_layers': 63, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_last_quarter'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:24:53,964] Trial 20 finished with value: 8.02331 and parameters: {'batch': 1497, 'u_batch': 2039, 'threads': 19, 'gpu_layers': 107, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_odd'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:25:15,672] Trial 21 finished with value: 19.207086 and parameters: {'batch': 1340, 'u_batch': 5789, 'threads': 23, 'gpu_layers': 30, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_down'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:26:05,232] Trial 22 finished with value: 8.040449 and parameters: {'batch': 1824, 'u_batch': 5870, 'threads': 23, 'gpu_layers': 54, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_from_6'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:26:54,861] Trial 23 finished with value: 8.033278 and parameters: {'batch': 1036, 'u_batch': 7996, 'threads': 22, 'gpu_layers': 51, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_odd'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:27:44,356] Trial 24 finished with value: 8.063421 and parameters: {'batch': 3704, 'u_batch': 5348, 'threads': 23, 'gpu_layers': 66, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_down'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:28:10,866] Trial 25 finished with value: 15.564622 and parameters: {'batch': 2950, 'u_batch': 7878, 'threads': 17, 'gpu_layers': 26, 'flash_attn': 1, 'override_tensor': 'ffn_cpu_even'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:28:59,085] Trial 26 finished with value: 8.344235 and parameters: {'batch': 5914, 'u_batch': 6944, 'threads': 13, 'gpu_layers': 10, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_odd'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:29:49,801] Trial 27 finished with value: 7.94166 and parameters: {'batch': 2985, 'u_batch': 4823, 'threads': 22, 'gpu_layers': 9, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_last_quarter'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:30:44,883] Trial 28 finished with value: 7.302078 and parameters: {'batch': 3825, 'u_batch': 7596, 'threads': 17, 'gpu_layers': 5, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_updown'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:31:34,555] Trial 29 finished with value: 8.024313 and parameters: {'batch': 13817, 'u_batch': 638, 'threads': 19, 'gpu_layers': 73, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_down'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:32:24,532] Trial 30 finished with value: 7.972755 and parameters: {'batch': 8341, 'u_batch': 7457, 'threads': 16, 'gpu_layers': 46, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_down'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:33:06,349] Trial 31 finished with value: 9.591129 and parameters: {'batch': 3021, 'u_batch': 6652, 'threads': 10, 'gpu_layers': 38, 'flash_attn': 1, 'override_tensor': 'ffn_cpu_even'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:33:51,096] Trial 32 finished with value: 9.017392 and parameters: {'batch': 685, 'u_batch': 8020, 'threads': 20, 'gpu_layers': 13, 'flash_attn': 1, 'override_tensor': 'ffn_cpu_last_quarter'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:34:44,839] Trial 33 finished with value: 7.4885 and parameters: {'batch': 4806, 'u_batch': 7467, 'threads': 18, 'gpu_layers': 6, 'flash_attn': 1, 'override_tensor': 'ffn_cpu_even'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:35:04,696] Trial 34 finished with value: 21.136816 and parameters: {'batch': 994, 'u_batch': 2641, 'threads': 21, 'gpu_layers': 31, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_down'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:35:29,769] Trial 35 finished with value: 16.421524 and parameters: {'batch': 4126, 'u_batch': 579, 'threads': 23, 'gpu_layers': 28, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_down'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:35:48,379] Trial 36 finished with value: 22.723116 and parameters: {'batch': 1923, 'u_batch': 713, 'threads': 23, 'gpu_layers': 32, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_down'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:36:11,346] Trial 37 finished with value: 18.043953 and parameters: {'batch': 623, 'u_batch': 1631, 'threads': 18, 'gpu_layers': 29, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_odd'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:37:00,864] Trial 38 finished with value: 8.049177 and parameters: {'batch': 124, 'u_batch': 183, 'threads': 24, 'gpu_layers': 39, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_even'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:37:50,137] Trial 39 finished with value: 8.080844 and parameters: {'batch': 1217, 'u_batch': 3605, 'threads': 15, 'gpu_layers': 43, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_down'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:38:39,663] Trial 40 finished with value: 8.040032 and parameters: {'batch': 4582, 'u_batch': 989, 'threads': 22, 'gpu_layers': 61, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_from_6'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:39:29,787] Trial 41 finished with value: 7.970598 and parameters: {'batch': 593, 'u_batch': 1608, 'threads': 12, 'gpu_layers': 43, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_odd'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:40:30,497] Trial 42 finished with value: 6.605198 and parameters: {'batch': 3614, 'u_batch': 2964, 'threads': 24, 'gpu_layers': 2, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_odd'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:41:09,859] Trial 43 finished with value: 10.333536 and parameters: {'batch': 4008, 'u_batch': 1218, 'threads': 15, 'gpu_layers': 17, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_up'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:42:06,973] Trial 44 finished with value: 7.030861 and parameters: {'batch': 550, 'u_batch': 2608, 'threads': 13, 'gpu_layers': 3, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_from_6'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:42:49,327] Trial 45 finished with value: 9.485697 and parameters: {'batch': 36, 'u_batch': 4711, 'threads': 22, 'gpu_layers': 43, 'flash_attn': 1, 'override_tensor': 'ffn_cpu_down'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:43:30,819] Trial 46 finished with value: 9.694485 and parameters: {'batch': 3699, 'u_batch': 1070, 'threads': 18, 'gpu_layers': 57, 'flash_attn': 1, 'override_tensor': 'ffn_cpu_down'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:44:25,608] Trial 47 finished with value: 7.323933 and parameters: {'batch': 2342, 'u_batch': 776, 'threads': 20, 'gpu_layers': 5, 'flash_attn': 1, 'override_tensor': 'ffn_cpu_odd'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:45:15,576] Trial 48 finished with value: 7.980142 and parameters: {'batch': 2119, 'u_batch': 2834, 'threads': 24, 'gpu_layers': 40, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_down'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:45:40,929] Trial 49 finished with value: 16.268947 and parameters: {'batch': 811, 'u_batch': 4318, 'threads': 19, 'gpu_layers': 27, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_all'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:46:09,569] Trial 50 finished with value: 14.326201 and parameters: {'batch': 1013, 'u_batch': 1797, 'threads': 20, 'gpu_layers': 25, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_last_quarter'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:47:00,274] Trial 51 finished with value: 7.868273 and parameters: {'batch': 226, 'u_batch': 54, 'threads': 23, 'gpu_layers': 88, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_down'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:47:43,999] Trial 52 finished with value: 9.248753 and parameters: {'batch': 5745, 'u_batch': 704, 'threads': 18, 'gpu_layers': 14, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_down'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:48:33,404] Trial 53 finished with value: 8.061315 and parameters: {'batch': 2623, 'u_batch': 618, 'threads': 21, 'gpu_layers': 43, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_down'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:48:53,287] Trial 54 finished with value: 21.124246 and parameters: {'batch': 1349, 'u_batch': 6169, 'threads': 20, 'gpu_layers': 31, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_up'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:49:50,459] Trial 55 finished with value: 7.005482 and parameters: {'batch': 2073, 'u_batch': 5862, 'threads': 22, 'gpu_layers': 4, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_up'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:50:40,003] Trial 56 finished with value: 8.057036 and parameters: {'batch': 2206, 'u_batch': 6915, 'threads': 20, 'gpu_layers': 44, 'flash_attn': 0, 'override_tensor': 'none'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:51:29,869] Trial 57 finished with value: 7.998568 and parameters: {'batch': 2793, 'u_batch': 5336, 'threads': 19, 'gpu_layers': 58, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_up'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:52:23,406] Trial 58 finished with value: 7.508218 and parameters: {'batch': 235, 'u_batch': 1959, 'threads': 23, 'gpu_layers': 7, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_updown'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:53:13,147] Trial 59 finished with value: 8.018431 and parameters: {'batch': 14415, 'u_batch': 3739, 'threads': 12, 'gpu_layers': 124, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_all'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:53:54,976] Trial 60 finished with value: 9.660574 and parameters: {'batch': 318, 'u_batch': 5954, 'threads': 24, 'gpu_layers': 18, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_odd'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:54:44,592] Trial 61 finished with value: 8.054259 and parameters: {'batch': 671, 'u_batch': 5264, 'threads': 23, 'gpu_layers': 65, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_even'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:55:24,099] Trial 62 finished with value: 10.224078 and parameters: {'batch': 808, 'u_batch': 1973, 'threads': 19, 'gpu_layers': 19, 'flash_attn': 0, 'override_tensor': 'none'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:56:08,313] Trial 63 finished with value: 9.136198 and parameters: {'batch': 3795, 'u_batch': 181, 'threads': 23, 'gpu_layers': 16, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_down'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:56:50,049] Trial 64 finished with value: 9.612723 and parameters: {'batch': 10615, 'u_batch': 2372, 'threads': 5, 'gpu_layers': 137, 'flash_attn': 1, 'override_tensor': 'ffn_cpu_last_quarter'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:57:20,329] Trial 65 finished with value: 13.520144 and parameters: {'batch': 778, 'u_batch': 596, 'threads': 21, 'gpu_layers': 24, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_odd'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:58:01,990] Trial 66 finished with value: 9.633065 and parameters: {'batch': 654, 'u_batch': 6681, 'threads': 18, 'gpu_layers': 71, 'flash_attn': 1, 'override_tensor': 'ffn_cpu_up'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:58:51,684] Trial 67 finished with value: 8.023739 and parameters: {'batch': 3363, 'u_batch': 1345, 'threads': 19, 'gpu_layers': 53, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_all'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 20:59:41,234] Trial 68 finished with value: 8.055845 and parameters: {'batch': 6742, 'u_batch': 5510, 'threads': 1, 'gpu_layers': 143, 'flash_attn': 0, 'override_tensor': 'ffn_cpu_from_6'}. Best is trial 5 with value: 27.141891.
+[I 2026-08-17 21:00:30,612] Trial 69 finished with value: 8.065544 and parameters: {'batch': 9595, 'u_batch': 1341, 'threads': 22, 'gpu_layers': 60, 'flash_attn': 0, 'override_tensor': 'none'}. Best is trial 5 with value: 27.141891.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\local_AI\interference\.venv\Scripts\llama-optimus.exe\__main__.py", line 10, in <module>
+  File "E:\local_AI\interference\.venv\Lib\site-packages\llama_optimus\cli.py", line 171, in main
+    run_optimization(n_trials=args.trials, n_tokens=args.n_tokens, metric=args.metric,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\local_AI\interference\.venv\Lib\site-packages\llama_optimus\core.py", line 538, in run_optimization
+    subprocess.run(shlex.split(llama_bench_cmd), check=True)
+  File "C:\Users\LANG\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LANG\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\LANG\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] 系统找不到指定的文件。

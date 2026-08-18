@@ -1,16 +1,27 @@
-from modelscope import snapshot_download
+# from modelscope import snapshot_download
 from llama_cpp import Llama
 import time
 import subprocess
-import os
-from datetime import datetime
+# import os
+# from datetime import datetime
 
-from typing_extensions import runtime
+# from typing_extensions import runtime
 
-def bench_model(n_gpu, prompt, model_dir):
+def bench_model(
+    model_dir,
+    n_gpu,
+    threads,
+    n_batch,
+    n_ubatch
+):
     llm = Llama(
         model_path=model_dir,
         n_gpu_layers= n_gpu,
+        n_threads=threads,
+        n_batch=n_batch,             # prompt 预填充（prefill）批大小
+        n_ubatch=n_ubatch,            # 微批大小
+        flash_attn=False,         # 关闭 flash attention
+        override_tensor="ffn_cpu_odd",  # 奇数层 FFN 强制放 CPU
         verbose=True,
         n_ctx=512
         )
@@ -58,23 +69,15 @@ def main():
     out = GetBest(model_dir, llama_bin_path)
     print(out)
 
-    # 保存结果到 interference 目录
-    result_dir = os.path.dirname(os.path.abspath(__file__))
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    result_file = os.path.join(result_dir, f"result_{timestamp}.txt")
+    n_gpu = 34
+    n_threads = 23
+    n_batch = 1516
+    n_ubatch = 6826
+    
 
-    with open(result_file, 'w', encoding='utf-8') as f:
-        f.write(f"测试时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-        f.write(f"模型路径: {model_dir}\n")
-        f.write(f"返回码: {out[0]}\n")
-        f.write(f"测试结果:\n{out[1]}\n")
-
-    print(f"结果已保存至: {result_file}")
-
-    # 关机
-    print("10秒后关机...")
-    time.sleep(10)
-    subprocess.run(["shutdown", "/s", "/t", "0"])
+    
+    bench = bench_model(model_dir=model_dir, n_gpu=n_gpu, threads=n_threads, n_batch=n_batch, n_ubatch=n_ubatch)
+    
 
 
 
